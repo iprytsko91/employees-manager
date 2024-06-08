@@ -1,0 +1,92 @@
+[
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440000",
+    "firstName": "Alice",
+    "lastName": "Smith",
+    "age": 28,
+    "city": "New York",
+    "street": "1st Ave",
+    "department": "HR"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440001",
+    "firstName": "Bob",
+    "lastName": "Johnson",
+    "age": 34,
+    "city": "Los Angeles",
+    "street": "2nd St",
+    "department": "IT"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440002",
+    "firstName": "Charlie",
+    "lastName": "Williams",
+    "age": 45,
+    "city": "Chicago",
+    "street": "3rd Blvd",
+    "department": "Finance"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440003",
+    "firstName": "David",
+    "lastName": "Brown",
+    "age": 30,
+    "city": "Houston",
+    "street": "4th Lane",
+    "department": "Marketing"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440004",
+    "firstName": "Eve",
+    "lastName": "Jones",
+    "age": 25,
+    "city": "Phoenix",
+    "street": "5th Dr",
+    "department": "Sales"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440005",
+    "firstName": "Frank",
+    "lastName": "Garcia",
+    "age": 38,
+    "city": "Philadelphia",
+    "street": "6th St",
+    "department": "R&D"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440006",
+    "firstName": "Grace",
+    "lastName": "Martinez",
+    "age": 32,
+    "city": "San Antonio",
+    "street": "7th Ave",
+    "department": "Operations"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440007",
+    "firstName": "Hank",
+    "lastName": "Lee",
+    "age": 29,
+    "city": "San Diego",
+    "street": "8th St",
+    "department": "Support"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440008",
+    "firstName": "Ivy",
+    "lastName": "Taylor",
+    "age": 27,
+    "city": "Dallas",
+    "street": "9th Blvd",
+    "department": "Logistics"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440009",
+    "firstName": "Jack",
+    "lastName": "Davis",
+    "age": 33,
+    "city": "San Jose",
+    "street": "10th Ln",
+    "department": "Legal"
+  }
+]

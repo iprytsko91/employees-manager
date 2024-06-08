@@ -1,0 +1,45 @@
+.employees-container {
+  --table-color: lightgray;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  table.employees-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0 1em;
+
+    thead {
+      tr {
+        background: var(--table-color);
+      }
+    }
+
+    tbody {
+      tr {
+        border-bottom: 1px solid var(--table-color);
+
+        td {
+          padding: 4px 8px;
+
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+
+    .employee-row {
+      .department {
+        text-transform: uppercase;
+      }
+    }
+
+    .centered {
+      text-align: center;
+    }
+  }
+}
