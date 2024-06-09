@@ -25,14 +25,14 @@
       <ng-template #allEmployees>
           <ng-container *ngFor="let item of employees">
             <tr class="employee-row" [id]="item.id">
-              <td>{{item.id}}</td>
-              <td>{{item.firstName}}</td>
-              <td>{{item.lastName}}</td>
-              <td>{{item.age}}</td>
-              <td>{{item.city}}</td>
-              <td>{{item.street}}</td>
-              <td class="department">{{item.department}}</td>
-              <td class="actions">
+              <td class="employee-id">{{item.id}}</td>
+              <td class="employee-name">{{item.firstName}}</td>
+              <td class="employee-last-name">{{item.lastName}}</td>
+              <td class="employee-age">{{item.age}}</td>
+              <td class="employee-city">{{item.city}}</td>
+              <td class="employee-street">{{item.street}}</td>
+              <td class="employee-department">{{item.department}}</td>
+              <td class="employee-actions">
                 <button (click)="editEmployee(item)">&#9998;</button>
               </td>
             </tr>

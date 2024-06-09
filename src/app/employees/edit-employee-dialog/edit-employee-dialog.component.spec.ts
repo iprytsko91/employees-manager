@@ -1,4 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { StoreModule } from "@ngrx/store";
+import { EffectsModule } from "@ngrx/effects";
+import { HttpClientTestingModule } from "@angular/common/http/testing";
 
 import { EditEmployeeDialogComponent } from './edit-employee-dialog.component';
 
@@ -8,7 +11,12 @@ describe('EditEmployeeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [EditEmployeeDialogComponent]
+      imports: [
+        EditEmployeeDialogComponent,
+        StoreModule.forRoot({}),
+        EffectsModule.forRoot([]),
+        HttpClientTestingModule
+      ]
     })
     .compileComponents();
 
