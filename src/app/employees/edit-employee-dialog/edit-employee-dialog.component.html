@@ -1,0 +1,70 @@
+<dialog #dialog (close)="reset()">
+  <div class="dialog-container">
+    <h1>{{ title }}</h1>
+    <h3 class="error-message" *ngIf="errorMessage">{{errorMessage}}</h3>
+    <button class="close-button"
+            (click)="close()">
+      X
+    </button>
+
+    <div class="dialog-body">
+      <form class="form" [formGroup]="form">
+        <div class="form-group">
+          <label for="id">ID
+            <span class="required" *ngIf="isRequired('id')">*</span>
+          </label>
+          <input id="id" formControlName="id">
+          <span class="required" *ngIf="form.get('id')?.hasError('required') && form.get('id')?.touched">Field is required</span>
+        </div>
+        <div class="form-group">
+          <label for="firstName">First Name
+            <span class="required" *ngIf="isRequired('firstName')">*</span>
+          </label>
+          <input id="firstName" formControlName="firstName">
+          <span class="required" *ngIf="form.get('firstName')?.hasError('required') && form.get('firstName')?.touched">Field is required</span>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name
+            <span class="required" *ngIf="isRequired('lastName')">*</span>
+          </label>
+          <input id="lastName" formControlName="lastName">
+          <span class="required" *ngIf="form.get('lastName')?.hasError('required') && form.get('lastName')?.touched">Field is required</span>
+        </div>
+        <div class="form-group">
+          <label for="age">Age
+            <span class="required" *ngIf="isRequired('age')">*</span>
+          </label>
+          <input type="number" id="age" formControlName="age">
+          <span class="required" *ngIf="form.get('age')?.hasError('required') && form.get('age')?.touched">Field is required</span>
+        </div>
+        <div class="form-group">
+          <label for="city">City
+            <span class="required" *ngIf="isRequired('city')">*</span>
+          </label>
+          <input id="city" formControlName="city">
+          <span class="required" *ngIf="form.get('city')?.hasError('required') && form.get('city')?.touched">Field is required</span>
+        </div>
+        <div class="form-group">
+          <label for="street">Street
+            <span class="required" *ngIf="isRequired('street')">*</span>
+          </label>
+          <input id="street" formControlName="street">
+          <span class="required" *ngIf="form.get('street')?.hasError('required') && form.get('street')?.touched">Field is required</span>
+        </div>
+        <div class="form-group">
+          <label for="department">Department
+            <span class="required" *ngIf="isRequired('department')">*</span>
+          </label>
+          <select  id="department" formControlName="department">
+            <option *ngFor="let item of departments" [value]="item">{{item | uppercase}}</option>
+          </select>
+          <span class="required" *ngIf="form.get('department')?.hasError('required') && form.get('department')?.touched">Field is required</span>
+        </div>
+      </form>
+    </div>
+    <div class="dialog-actions">
+      <button (click)="close()">Cancel</button>
+      <button (click)="save()">Save</button>
+    </div>
+  </div>
+</dialog>

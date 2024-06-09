@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EditEmployeeComponent } from './edit-employee.component';
+import { EditEmployeeDialogComponent } from './edit-employee-dialog.component';
 
 describe('EditEmployeeComponent', () => {
-  let component: EditEmployeeComponent;
-  let fixture: ComponentFixture<EditEmployeeComponent>;
+  let component: EditEmployeeDialogComponent;
+  let fixture: ComponentFixture<EditEmployeeDialogComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [EditEmployeeComponent]
+      imports: [EditEmployeeDialogComponent]
     })
     .compileComponents();
-    
-    fixture = TestBed.createComponent(EditEmployeeComponent);
+
+    fixture = TestBed.createComponent(EditEmployeeDialogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

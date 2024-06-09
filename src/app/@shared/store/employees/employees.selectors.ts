@@ -1,5 +1,6 @@
 import { EmployeeState } from "./employees.reducer";
 import { createSelector } from "@ngrx/store";
+import { Employee } from "../../models";
 
 export interface AppState {
   appState: EmployeeState;

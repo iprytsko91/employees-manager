@@ -15,6 +15,10 @@
     thead {
       tr {
         background: var(--table-color);
+
+        th {
+          text-align: start;
+        }
       }
     }
 

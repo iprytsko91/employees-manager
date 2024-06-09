@@ -6,7 +6,7 @@ import { AsyncPipe, NgForOf, NgIf } from "@angular/common";
 
 import { selectAllEmployees } from "../@shared/store/employees/employees.selectors";
 import { loadAllEmployees } from "../@shared/store/employees";
-import { EditEmployeeComponent } from "./edit-employee/edit-employee.component";
+import { EditEmployeeDialogComponent } from "./edit-employee-dialog/edit-employee-dialog.component";
 
 @Component({
   selector: 'emm-employees',
@@ -15,13 +15,13 @@ import { EditEmployeeComponent } from "./edit-employee/edit-employee.component";
     AsyncPipe,
     NgIf,
     NgForOf,
-    EditEmployeeComponent
+    EditEmployeeDialogComponent
   ],
   templateUrl: './employees.component.html',
   styleUrl: './employees.component.scss'
 })
 export class EmployeesComponent {
-  @ViewChild('dialog') dialog: ElementRef;
+  @ViewChild('editEmployeeDialog') editEmployeeDialog: EditEmployeeDialogComponent;
   employees$: Observable<Employee[]> = this.store.select(selectAllEmployees);
 
   constructor(private store: Store) {
@@ -29,11 +29,10 @@ export class EmployeesComponent {
   }
 
   editEmployee(employee: Employee) {
-    console.log('edit', employee)
-    this.dialog.nativeElement.showModal();
+    this.editEmployeeDialog.open(employee, true);
   }
 
   addEmployee() {
-
+    this.editEmployeeDialog.open(null);
   }
 }
